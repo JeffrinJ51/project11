@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>3D Shape Area Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <h2>3D Shape Area Calculator</h2>
+    <label for="shape">Select Shape</label>
+    <select id="shape">
+      <option value="cube">Cube</option>
+      <option value="sphere">Sphere</option>
+      <option value="cylinder">Cylinder</option>
+      <option value="cone">Cone</option>
+      <option value="rectangularPrism">Rectangular Prism</option>
+      <option value="pyramid">Pyramid</option>
+    </select>
+
+    <img id="shape-image" alt="Shape Image" />
+
+    <div id="inputs"></div>
+
+    <button onclick="calculateArea()">Calculate</button>
+    <div id="result"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
